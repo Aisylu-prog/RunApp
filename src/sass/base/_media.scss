@@ -1,0 +1,142 @@
+@media ( max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }   
+}
+@media ( max-width: 991px) {
+    .container {
+        max-width: 700px;
+    }   
+    .header {
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .promo { 
+        padding: 21px 0 50px 0;
+        &__header {
+             font-size: 30px;
+        }
+        &__subheader {
+            font-size: 20px;  
+        }
+    }
+    .button_main {
+        width: 200px;
+    }
+    .benefits {
+        &__header {
+            font-size: 25px;
+        }   
+        &__icon {
+            width: 250px; 
+            padding: 0 15px;
+        }
+    }
+}
+@media ( max-width: 767px) {
+    .container {
+        max-width: 550px;
+    }    
+    .header {
+        flex-wrap: wrap;
+
+        &__contacts {
+            margin-left: 350px;
+            margin-top: 20px;
+        }
+    }
+    .promo { 
+        background: url(../img/main_v_bg.jpg) center (center / cover) no-repeat;
+        background-attachment: fixed;
+        &__header {
+             font-size: 25px;
+        }
+        &__subheader {
+            font-size: 15px;  
+        }
+        &__icons {
+            width: 350px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .button_main {
+        width: 170px;
+        font-size: 14px;
+    }
+    .benefits {
+        &__descr {
+            font-size: 12px;
+        }   
+    }
+}
+@media ( max-width: 575px) {
+    .container {
+        max-width: 400px;
+    }
+    .header {
+        &__logo {
+            margin: 0 auto;
+        }
+        &__contacts {
+            margin-left: 0;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__official {
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+    .promo {
+        min-height: 400px;
+        background: url(../img/main_v_bg.jpg) center (center / cover) no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        &__icons {
+            margin-top: 30px;
+            display: block;
+            width: 100%;
+        }
+        &__icon {
+            width: auto;
+            margin-top: 20px;
+        }
+        &__header {
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        &__subheader {
+            font-size: 13px; 
+            margin: 0 auto;
+        }
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__link {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+    .button_main {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 150px;
+        font-size: 12px;
+    }
+    .benefits {
+        &__header {
+            font-size: 20px;
+        }
+        &__list {
+            display: block;
+            font-size: 12px;
+            padding-top: 30px;
+        }
+        &__icon {
+            width: 100%;
+        }
+    }
+}

@@ -11,26 +11,25 @@ gulp.task('server', function() {
         server: {
             baseDir: "src"
         }
-    });
-});
-
+    })
+})
 gulp.task('styles', function() {
-    return gulp.src('src/sass/*.+(scss|sass)')
+    return gulp.src("src/sass/**/*.+(scss|sass)")
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(autoprefixer({
                 cascade: false
             }))
             .pipe(cleanCSS({compatibility: 'ie8'}))
-            .pipe(gulp.dest('src/css'))
+            .pipe(gulp.dest("src/css"))
             .pipe(browserSync.stream());
-});
+})
 
 /* Слежение за обновлениями: */
 
 
 gulp.task('watch', function() {
-    gulp.watch('src/sass/*.+(scss|sass)', gulp.parallel('styles'));
+    gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
     gulp.watch('src/*.html').on('change', browserSync.reload);      
-});
+})
 
 gulp.task('default', gulp.parallel( 'watch', 'server', 'styles'));
